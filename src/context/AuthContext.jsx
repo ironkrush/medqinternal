@@ -22,13 +22,18 @@ export const AuthProvider = ({ children }) => {
         try {
             const response = await axios.post('http://localhost:5000/api/auth/login', { email, password });
             console.log('Login successful:', response.data);
-            setUser(response.data.user); // Assuming the response contains the user object
+            setUser(response.data.user); 
             localStorage.setItem('user', JSON.stringify(response.data.user));
-            navigate('/dashboard'); // Redirect to dashboard or any other page
+            navigate('/dashboard');
         } catch (error) {
-            console.error('Login failed:', error.response.data);
+            console.error('Login failed:', error.response ? error.response.data : error.message);
+            if (error.response && error.response.status === 400) {
+                alert('Invalid credentials or bad request. Please check your input.');
+            }
         }
     };
+    
+    
     
     return (
         <AuthContext.Provider value={{ user, login }}>

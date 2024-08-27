@@ -1,5 +1,6 @@
 import express from 'express';
 import User from '../models/User.js';
+import { generateToken } from '../utils/tokenUtils.js';
 
 const router = express.Router();
 
@@ -25,31 +26,34 @@ router.post('/signup', async (req, res) => {
 
 router.post('/login', async (req, res) => {
     const { email, password } = req.body;
-    console.log('Received Email:', email);
-    console.log('Received Password:', password);
+
+    if (!email || !password) {
+        return res.status(400).json({ message: 'Please provide both email and password' });
+    }
 
     try {
         const user = await User.findOne({ email });
 
-        // Log the user found (or not)
-        if (!user) {
-            console.log('User not found');
+        if (!user || !(await user.matchPassword(password))) {
             return res.status(400).json({ message: 'Invalid credentials' });
         }
 
-        console.log('Found User:', user);
-
-        if (user.password !== password) {
-            console.log('Password mismatch');
-            return res.status(400).json({ message: 'Invalid credentials' });
-        }
-
-        res.status(200).json({ message: 'Login successful', user });
+        res.status(200).json({
+            message: 'Login successful',
+            user: {
+                id: user._id,
+                username: user.username,
+                email: user.email,
+                role: user.role,
+            },
+            token: generateToken(user._id),
+        });
     } catch (error) {
         console.error('Server error:', error);
         res.status(500).json({ message: 'Server error' });
     }
 });
+
 
 
 export default router;

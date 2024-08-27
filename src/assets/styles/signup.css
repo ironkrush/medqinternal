@@ -291,6 +291,8 @@ input:focus{
         font-family:Baloo;
     }
     .form{
+        height: 100vh;
+        width: 100vw;
         display:flex ;
         align-items:center ;
         justify-content: center;
@@ -374,6 +376,8 @@ input:focus{
         font-family:Baloo;
     }
     .form{
+        height: 100vh;
+        width: 100vw;
         display:flex ;
         align-items:center ;
         justify-content: center;
