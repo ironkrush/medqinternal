@@ -81,13 +81,6 @@ const SignupPage = () => {
                                     required
                                     autoComplete="new-password"
                                 />
-                                <button
-                                    type="button"
-                                    onClick={() => setShowPassword(!showPassword)}
-                                    className="toggle-icon"
-                                >
-                                    <i className={`fas ${showPassword ? 'fa-eye-slash' : 'fa-eye'}`}></i>
-                                </button>
                             </div>
                             <div className="input-box">
                                 <input
@@ -98,13 +91,6 @@ const SignupPage = () => {
                                     required
                                     autoComplete="new-password"
                                 />
-                                <button
-                                    type="button"
-                                    onClick={() => setShowRePassword(!showRePassword)}
-                                    className="toggle-icon"
-                                >
-                                    <i className={`fas ${showRePassword ? 'fa-eye-slash' : 'fa-eye'}`}></i>
-                                </button>
                             </div>
                         </div>
                         <div className="radio-wrapper">

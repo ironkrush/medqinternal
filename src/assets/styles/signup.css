@@ -277,7 +277,7 @@ input:focus{
 }
 
 @media (min-width: 1245px) {
-    #signin{
+    #signup{
         height: 100%;
         width: 100%;
         position: relative;
@@ -318,7 +318,7 @@ input:focus{
 }
 
 @media (min-width: 1026px) and (max-width: 1245px) {
-    #signin{
+    #signup{
         height: 100%;
         width: 100%;
         position: relative;
@@ -360,7 +360,7 @@ input:focus{
 
 
 @media (min-width: 769px) and (max-width: 1025px) {
-    #signin{
+    #signup{
         height: 100%;
         width: 100%;
         position: relative;
@@ -414,7 +414,7 @@ input:focus{
 
 
 @media (min-width: 426px) and (max-width: 768px) {
-    #signin{
+    #signup{
         height: 100%;
         width: 100%;
         position: relative;
@@ -467,7 +467,7 @@ input:focus{
 }
 
 @media (min-width: 380px) and (max-width: 425px) {
-    #signin{
+    #signup{
         height: 100%;
         width: 100%;
         position: relative;
@@ -520,7 +520,7 @@ input:focus{
 }
 
 @media (min-width: 320px) and (max-width: 379px) {
-    #signin{
+    #signup{
         height: 100%;
         width: 100%;
         position: relative;
@@ -573,7 +573,7 @@ input:focus{
 }
 
 @media (max-width: 319px) {
-    #signin{
+    #signup{
         height: 100%;
         width: 100%;
         position: relative;
