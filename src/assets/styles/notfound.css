@@ -1,0 +1,170 @@
+.content404 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(97,45,253,1) 100%);
+    overflow: hidden;
+}
+
+.comment0 {
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.video404 {
+    height: 100%;
+    width: auto;
+    box-shadow: 5px 5px 100px 10px #dadada;
+}
+
+.data {
+    text-align: center;
+    font-size: 1.875rem; /* 30px */
+    margin-bottom: 2rem;
+}
+
+.comment1, .comment2 {
+    margin-bottom: 0.5rem;
+}
+
+.comment3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nfbtn {
+    --c: #fff;
+    background-color: black;
+    border: none;
+    transform: perspective(500px) rotateY(calc(20deg * var(--_i, -1)));
+    text-shadow: calc(var(--_i, -1) * 0.08em) -.01em 0 var(--c),
+                calc(var(--_i, -1) * -0.08em) .01em 2px #0004;
+    outline-offset: .1em;
+    transition: 0.3s;
+}
+
+.nfbtn:hover,
+.nfbtn:focus-visible {
+    --_p: 0%;
+    --_i: 1;
+}
+
+.nfbtn:active {
+    text-shadow: none;
+    color: var(--c);
+    box-shadow: inset 0 0 9px #0005;
+    transition: 0s;
+}
+
+.nfbtn .notfoundhome {
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    font-size: 1.5625rem; /* 25px */
+    cursor: pointer;
+    padding: 0.1em 0.3em;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1245px) {
+    .video404 {
+        height: 70%;
+    }
+    .data {
+        font-size: 1.25rem; /* 20px */
+    }
+
+    .nfbtn .notfoundhome {
+        font-size: 1.25rem; /* 20px */
+        width: 12vw;
+        height: 8vh;
+    }
+}
+
+@media (max-width: 1025px) {
+    .video404 {
+        height: 55%;
+    }
+    .data {
+        font-size: 1.125rem; /* 18px */
+    }
+
+    .nfbtn .notfoundhome {
+        font-size: 1.125rem; /* 18px */
+        width: 14vw;
+        height: 9vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .video404 {
+        height: 40%;
+    }
+
+    .data {
+        font-size: 1rem; /* 16px */
+    }
+
+    .nfbtn .notfoundhome {
+        font-size: 1rem; /* 16px */
+        width: 14vw;
+        height: 7vh;
+    }
+}
+
+@media (max-width: 425px) {
+    .video404 {
+        height: 25%;
+    }
+
+    .data {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    .nfbtn .notfoundhome {
+        font-size: 0.875rem; /* 14px */
+        width: 16vw;
+        height: 6vh;
+    }
+}
+
+@media (max-width: 380px) {
+    .video404 {
+        height: 30%;
+    }
+
+    .data {
+        font-size: 0.75rem; /* 12px */
+    }
+
+    .nfbtn .notfoundhome {
+        font-size: 0.75rem; /* 12px */
+        width: 18vw;
+        height: 5vh;
+    }
+}
+
+@media (max-width: 319px) {
+    .video404 {
+        height: 25%;
+    }
+
+    .data {
+        font-size: 0.625rem; /* 10px */
+    }
+
+    .nfbtn .notfoundhome {
+        font-size: 0.625rem; /* 10px */
+        width: 20vw;
+        height: 4vh;
+    }
+}

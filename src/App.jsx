@@ -14,6 +14,7 @@ import AppointmentPage from './pages/AppointmentPage';
 import BedManagementPage from './pages/BedManagementPage';
 // import Navbar from './components/Navbar';
 import InventoryPage from './pages/InventoryPage';
+import Notfound from './pages/notfound';
 
 const App = () => {
     
@@ -69,6 +70,7 @@ const App = () => {
                             </ProtectedRoute>
                         }
                     />
+                    <Route path="*" element={<Notfound />} />
                 </Routes>
             </AuthProvider>
         </Router>
