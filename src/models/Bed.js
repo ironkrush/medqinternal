@@ -1,4 +1,3 @@
-// Bed.js
 import mongoose from 'mongoose';
 
 const bedSchema = new mongoose.Schema({

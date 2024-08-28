@@ -1,4 +1,4 @@
-const User = require('../models/User');
+import User from '../models/User.js';
 const { generateToken } = require('../utils/tokenUtils');
 
 const registerUser = async (req, res) => {

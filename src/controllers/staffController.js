@@ -1,4 +1,3 @@
-// staffController.js
 import Bed from '../models/Bed.js';
 import Inventory from '../models/Inventory.js';
 

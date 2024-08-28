@@ -1,4 +1,3 @@
-// patientController.js
 import Patient from '../models/Patient.js';
 import Appointment from '../models/Appointment.js';
 
