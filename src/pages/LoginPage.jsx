@@ -20,9 +20,6 @@ const LoginPage = () => {
 
     return (
         <div id="signin">
-            <nav className="logo">
-                <h1 className="logo-name">medq</h1>
-            </nav>
             <div className="form">
                 <div className="wrapper">
                     <form onSubmit={handleSubmit}>

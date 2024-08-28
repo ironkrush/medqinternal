@@ -12,7 +12,7 @@ import StaffDashboard from './pages/StaffDashboard';
 import ProfilePage from './pages/ProfilePage';
 import AppointmentPage from './pages/AppointmentPage';
 import BedManagementPage from './pages/BedManagementPage';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import InventoryPage from './pages/InventoryPage';
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
     return (
         <Router>
             <AuthProvider>
-                <Navbar />
+                {/* <Navbar /> */}
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/login" element={<LoginPage />} />

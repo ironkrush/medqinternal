@@ -1,14 +1,15 @@
-*{
-  margin:0%;
+* {
+  margin: 0%;
   padding: 0%;
   font-family: "popins";
   overflow: hidden;
 }
 
-html,body{
+html,
+body {
   box-sizing: border-box;
   height: 100%;
-  width: 100%;  
+  width: 100%;
 
 }
 
@@ -16,14 +17,16 @@ html,body{
   font-family: "Baloo";
   src: url(./assets/fonts/BalooChettan-Regular.ttf);
 }
+
 @font-face {
   font-family: "popins";
   src: url(./assets/fonts/Poppins-Medium.ttf);
 }
-:root{
-  --background-color:#b7cbd8;
-  --white:#fff;
-  --bg-dash:#F7F2F2;
-   --black:#000;
-   --mac-bg:#ECE9E9;
+
+:root {
+  --background-color: #b7cbd8;
+  --white: #fff;
+  --bg-dash: #F7F2F2;
+  --black: #000;
+  --mac-bg: #ECE9E9;
 }

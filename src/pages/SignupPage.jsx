@@ -3,6 +3,7 @@ import { AuthContext } from '../context/AuthContext';
 import axios from 'axios';
 import '../assets/styles/signup.css';
 import signupBgVideo from '../assets/images/signupbg.mp4';
+import { Link } from 'react-router-dom';
 
 const SignupPage = () => {
     const { signup } = useContext(AuthContext);
@@ -39,9 +40,6 @@ const SignupPage = () => {
 
     return (
         <div id="signup">
-            <nav className="logo">
-                <h1 className="logo-name">medq</h1>
-            </nav>
             <div className="form">
                 <div className="wrapper">
                     <form onSubmit={handleSubmit}>
@@ -104,9 +102,11 @@ const SignupPage = () => {
                                 onChange={(e) => setRole(e.target.value)}
                             />
                             <label htmlFor="radio1" className="label">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="12" cy="12" r="10" stroke={role === 'doctor' ? 'black' : '#bbb'} strokeWidth="2"/>
-                                    <circle cx="12" cy="12" r="6" fill={role === 'doctor' ? 'black' : 'none'} />
+                                <svg width="45" height="45" viewBox="0 0 95 95">
+                                    <circle cx="50" cy="50" r="20" stroke="black" fill="none"></circle>
+                                    <g transform="translate(0,-952.36222)">
+                                        <path d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4" stroke="black" stroke-width="3" fill="none" class="path1"></path>
+                                    </g>
                                 </svg>
                                 <span>Doctor</span>
                             </label>
@@ -122,9 +122,11 @@ const SignupPage = () => {
                                 onChange={(e) => setRole(e.target.value)}
                             />
                             <label htmlFor="radio2" className="label">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="12" cy="12" r="10" stroke={role === 'staff' ? 'black' : '#bbb'} strokeWidth="2"/>
-                                    <circle cx="12" cy="12" r="6" fill={role === 'staff' ? 'black' : 'none'} />
+                            <svg width="45" height="45" viewBox="0 0 95 95">
+                                    <circle cx="50" cy="50" r="20" stroke="black" fill="none"></circle>
+                                    <g transform="translate(0,-952.36222)">
+                                        <path d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4" stroke="black" stroke-width="3" fill="none" class="path1"></path>
+                                    </g>
                                 </svg>
                                 <span>Staff</span>
                             </label>
@@ -140,9 +142,11 @@ const SignupPage = () => {
                                 onChange={(e) => setRole(e.target.value)}
                             />
                             <label htmlFor="radio3" className="label">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="12" cy="12" r="10" stroke={role === 'patient' ? 'black' : '#bbb'} strokeWidth="2"/>
-                                    <circle cx="12" cy="12" r="6" fill={role === 'patient' ? 'black' : 'none'} />
+                            <svg width="45" height="45" viewBox="0 0 95 95">
+                                    <circle cx="50" cy="50" r="20" stroke="black" fill="none"></circle>
+                                    <g transform="translate(0,-952.36222)">
+                                        <path d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4" stroke="black" stroke-width="3" fill="none" class="path1"></path>
+                                    </g>
                                 </svg>
                                 <span>Patient</span>
                             </label>
@@ -152,7 +156,10 @@ const SignupPage = () => {
                             <a href="#">Forgot password?</a>
                         </div>
                         <div className="signupbtn">
-                        <button type="submit" className="button">Signup</button>
+                            <button type="submit" className="button">Signup</button>
+                        </div>
+                        <div className='alreadyaccount'>
+                            <Link to="/login">Already have an account</Link>
                         </div>
                     </form>
                 </div>
