@@ -1,13 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 const PatientDashboard = () => {
-    return (
-        <div>
-            <h2>Patient Dashboard</h2>
-            <p>Welcome, Patient!</p>
-            
-        </div>
-    );
-};
+  return (
+    <div>Hello patient</div>
+  )
+}
 
-export default PatientDashboard;
+export default PatientDashboard

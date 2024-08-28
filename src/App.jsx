@@ -16,6 +16,7 @@ import Navbar from './components/Navbar';
 import InventoryPage from './pages/InventoryPage';
 
 const App = () => {
+    
     return (
         <Router>
             <AuthProvider>
