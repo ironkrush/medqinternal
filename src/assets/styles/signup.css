@@ -417,11 +417,12 @@ input:focus {
 
 @media (min-width: 769px) and (max-width: 1024px) {
     #signup {
-        height: 100%;
-        width: 100%;
+        height: 110vh;
+        width: 100vw;
         position: relative;
         display: flex;
         justify-content: center;
+        overflow: hidden;
     }
 
     .form {
@@ -433,7 +434,7 @@ input:focus {
     }
 
     .wrapper {
-        margin-top: 7vh;
+        margin-top: 2vh;
         width: 350px;
         z-index: 100;
         position: absolute;
@@ -472,11 +473,12 @@ input:focus {
 
 @media (min-width: 426px) and (max-width: 766px) {
     #signup {
-        height: 100%;
-        width: 100%;
+        height: 110vh;
+        width: 100vw;
         position: relative;
         display: flex;
         justify-content: center;
+        overflow: hidden;
     }
 
     .logo-name {
@@ -493,7 +495,7 @@ input:focus {
     }
 
     .wrapper {
-        margin-top: 7vh;
+        margin-top: 2vh;
         width: 350px;
         z-index: 100;
         position: absolute;
@@ -531,11 +533,12 @@ input:focus {
 
 @media (min-width: 380px) and (max-width: 424px) {
     #signup {
-        height: 100%;
-        width: 100%;
+        height: 110vh;
+        width: 100vw;
         position: relative;
         display: flex;
         justify-content: center;
+        overflow: hidden;
     }
 
     .logo-name {
@@ -552,7 +555,7 @@ input:focus {
     }
 
     .wrapper {
-        margin-top: 7vh;
+        margin-top: 2vh;
         width: 350px;
         z-index: 100;
         position: absolute;
@@ -590,11 +593,12 @@ input:focus {
 
 @media (min-width: 320px) and (max-width: 378px) {
     #signup {
-        height: 100%;
-        width: 100%;
+        height: 110vh;
+        width: 100vw;
         position: relative;
         display: flex;
         justify-content: center;
+        overflow: hidden;
     }
 
     .logo-name {
@@ -611,7 +615,7 @@ input:focus {
     }
 
     .wrapper {
-        margin-top: 7vh;
+        margin-top: 2vh;
         width: 295px;
         z-index: 100;
         position: absolute;
@@ -649,11 +653,12 @@ input:focus {
 
 @media (max-width: 318px) {
     #signup {
-        height: 100%;
-        width: 100%;
+        height: 110vh;
+        width: 100vw;
         position: relative;
         display: flex;
         justify-content: center;
+        overflow: hidden;
     }
 
     .logo-name {
@@ -670,7 +675,7 @@ input:focus {
     }
 
     .wrapper {
-        margin-top: 7vh;
+        margin-top: 2vh;
         width: 250px;
         z-index: 100;
         position: absolute;
