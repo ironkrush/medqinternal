@@ -164,7 +164,7 @@ const SignupPage = () => {
                     </form>
                 </div>
             </div>
-            <video className="dna" src={signupBgVideo} autoPlay loop muted></video>
+          <video className="dna" src={signupBgVideo} autoPlay loop muted></video> 
         </div>
     );
 };
