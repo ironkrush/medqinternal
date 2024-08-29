@@ -104,16 +104,15 @@
     position: absolute;
     z-index: 10;
     font-size: 2rem;
+    align-items: center;
     background: -webkit-linear-gradient(#eee, #333);
     background-color: #d7d7d7;
-    
-    align-items: center; 
-}
-
-.tagline h1{
+    background-clip: text;
+  }
+  .tagline h1{
     letter-spacing: 0.2rem;
-    
-}
+    -webkit-text-fill-color: transparent;
+  }
 
 .hbutton{
     cursor: pointer;
@@ -190,13 +189,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
 }
 .contact-footer {
-    margin: 5rem;
+    margin: 3rem;
     margin-right: 3rem;
     display: flex;
-    border-top: 1px solid rgb(0, 0, 0);
     justify-content: center;
     align-items: center;
 }
@@ -264,6 +262,7 @@ a {
 }
 .stuff-footer {
     padding-left: 10rem;
+    background: #d1e1e7;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -277,7 +276,7 @@ a {
 }
 .review-page {
     margin-top: 10rem;
-    height: 100vh;
+    height: 160vh;
     width: 100%;
     /* background-color: #204e51; */
     perspective: 1000px;
@@ -320,9 +319,9 @@ a {
     width: 100%;
     height: 100%;
     position: absolute;
-    margin-top: 10rem;
+ margin-top: 15rem;
     transform: scaleX(-1);
-    height: 34em;
+    height: 30em;
     width: 40em;
     left: 25%;
 }
@@ -633,23 +632,6 @@ a {
     transition: transform 0.5s ease;
     transform-style: preserve-3d; 
     will-change: transform;
-}
-
-.tagline{
-    position: absolute;
-    font-family:aeonik;
-    font-weight: 900;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    z-index: 10;
-    font-size: 2rem;
-    background: -webkit-linear-gradient(#eee, #333);
-    background-color: #d7d7d7;
-    letter-spacing: 0.2rem;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    align-items: center;
 }
 .hbutton{
     cursor: pointer;
