@@ -186,8 +186,10 @@
 .footer-parent {
     width: 100%;
     font-family: aeonik;
-    /* background-color: #d1e1e7; */
-    display: grid;
+    background-color: #d1e1e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 .contact-footer {
@@ -318,7 +320,7 @@ a {
     width: 100%;
     height: 100%;
     position: absolute;
-    margin-top: 20rem;
+    margin-top: 10rem;
     transform: scaleX(-1);
     height: 34em;
     width: 40em;
@@ -804,7 +806,7 @@ a {
     
     #appointment_homepage > img {
         width: 80vw;
-        height: 20vh;
+        height: auto;
     }
 }
 
@@ -973,7 +975,7 @@ a {
     /* Adjust image sizes for mobile */
     #appointment_homepage > img {
         width: 80vw;
-        height: 20vh;
+        height: auto;
     }
 }
 
