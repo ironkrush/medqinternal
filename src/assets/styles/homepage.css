@@ -106,13 +106,13 @@
     font-size: 2rem;
     background: -webkit-linear-gradient(#eee, #333);
     background-color: #d7d7d7;
-    /* background-clip: text; */
+    
     align-items: center; 
 }
 
 .tagline h1{
     letter-spacing: 0.2rem;
-    /* -webkit-text-fill-color: transparent; */
+    
 }
 
 .hbutton{
