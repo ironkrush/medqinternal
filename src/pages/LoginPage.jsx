@@ -19,7 +19,7 @@ const LoginPage = () => {
     };
 
     return (
-        <div id="signin">
+        <div id="signup">
             <div className="form">
                 <div className="wrapper">
                     <form onSubmit={handleSubmit}>

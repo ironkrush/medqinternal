@@ -978,6 +978,9 @@ a {
 }
 
 @media (min-width: 700px) and (max-width: 799px) {
+    .wrapper{
+        top: 5%;
+    }
     .glassin-nav{
         margin: 0 50px;
         border-radius: 50px;
@@ -1150,6 +1153,13 @@ a {
 }
 
 @media (min-width: 630px) and (max-width: 699px) {
+    #signup{
+        height: 100vh;
+        width: 100vw;
+    }
+    .wrapper{
+        top: 5%;
+    }
     .glassin-nav{
         margin: 0 50px;
         border-radius: 50px;
@@ -1319,6 +1329,13 @@ a {
 }
 
 @media (min-width: 591px) and (max-width: 629px) {
+    #signup{
+        height: 100vh;
+        width: 100vw;
+    }
+    .wrapper{
+        top: 5%;
+    }
     .glassin-nav{
         margin: 0 50px;
         border-radius: 50px;
@@ -1488,6 +1505,13 @@ a {
 }
 
 @media (min-width: 546px) and (max-width: 590px) {
+    #signup{
+        height: 100vh;
+        width: 100vw;
+    }
+    .wrapper{
+        top: 5%;
+    }
     .glassin-nav{
         margin: 0 50px;
         border-radius: 50px;
@@ -1658,6 +1682,13 @@ a {
 }
 
 @media (min-width: 512px) and (max-width: 545px) {
+    #signup{
+        height: 100vh;
+        width: 100vw;
+    }
+    .wrapper{
+        top: 5%;
+    }
     .glassin-nav{
         margin: 0 50px;
         border-radius: 50px;
@@ -1827,6 +1858,13 @@ a {
 }
 
 @media (min-width: 464px) and (max-width: 511px) {
+    #signup{
+        height: 100vh;
+        width: 100vw;
+    }
+    .wrapper{
+        top: 5%;
+    }
     .glassin-nav{
         margin: 0 50px;
         border-radius: 50px;
@@ -1995,6 +2033,13 @@ a {
 }
 
 @media (min-width: 443px) and (max-width: 463px) {
+    #signup{
+        height: 100vh;
+        width: 100vw;
+    }
+    .wrapper{
+        top: 5%;
+    }
     .glassin-nav{
         margin: 0 50px;
         border-radius: 50px;
@@ -2163,6 +2208,13 @@ a {
 }
 
 @media (min-width: 425px) and (max-width: 441px) {
+    #signup{
+        height: 100vh;
+        width: 100vw;
+    }
+    .wrapper{
+        top: 5%;
+    }
     .glassin-nav{
         margin: 0 40px;
         border-radius: 50px;
