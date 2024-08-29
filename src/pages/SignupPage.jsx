@@ -1,4 +1,5 @@
 import React, { useState, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import axios from 'axios';
 import '../assets/styles/signup.css';
@@ -7,6 +8,8 @@ import { Link } from 'react-router-dom';
 
 const SignupPage = () => {
     const { signup } = useContext(AuthContext);
+    const navigate = useNavigate(); // useNavigate hook from React Router
+
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -32,6 +35,9 @@ const SignupPage = () => {
             });
             setSuccess('Signup successful!');
             console.log('Signup successful:', response.data);
+
+            
+            navigate('/dashboard');
         } catch (error) {
             setError('Signup failed. Please try again.');
             console.error('Signup failed:', error.response?.data || error.message);
