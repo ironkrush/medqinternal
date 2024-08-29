@@ -4,6 +4,7 @@ import MedicineImg from '../assets/images/medicine.png'
 import HCard1 from '../assets/images/final_hd_image.png'
 import HCard2 from '../assets/images/queue_homepage.png'
 import HCard3 from '../assets/images/Bed_homepage.png'
+import Agni from '../assets/images/agnivesh.webp'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import '../assets/styles/homepage.css';
 import { Link } from 'react-router-dom';
@@ -227,22 +228,22 @@ const HomePage = () => {
                         </h3>
                     </div>
                     <div className="flying-img" style={{ top: '20%', left: '20%', filter: 'blur(0px)' }}>
-                        <img src="f1.avif" alt="Flying Image 1" />
+                        <img src={Agni} alt="Flying Image 1" />
                     </div>
                     <div className="flying-img" style={{ top: '75%', left: '30%' }}>
-                        <img src="f2.avif" alt="Flying Image 2" />
+                        <img src={Agni} alt="Flying Image 2" />
                     </div>
                     <div className="flying-img" style={{ top: '65%', left: '5%', filter: 'blur(0px)' }}>
-                        <img src="f1.avif" alt="Flying Image 3" />
+                        <img src={Agni} alt="Flying Image 3" />
                     </div>
                     <div className="flying-img" style={{ top: '40%', left: '80%' }}>
-                        <img src="f2.avif" alt="Flying Image 4" />
+                        <img src={Agni} alt="Flying Image 4" />
                     </div>
                     <div className="flying-img" style={{ top: '10%', left: '50%', filter: 'blur(0px)' }}>
-                        <img src="f2.avif" alt="Flying Image 5" />
+                        <img src={Agni} alt="Flying Image 5" />
                     </div>
                     <div className="flying-img" style={{ top: '60%', left: '60%' }}>
-                        <img src="f2.avif" alt="Flying Image 6" />
+                        <img src={Agni} alt="Flying Image 6" />
                     </div>
                 </div>
                 <footer>
