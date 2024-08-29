@@ -5,6 +5,7 @@ import HCard1 from '../assets/images/final_hd_image.png'
 import HCard2 from '../assets/images/queue_homepage.png'
 import HCard3 from '../assets/images/Bed_homepage.png'
 import Agni from '../assets/images/agnivesh.webp'
+import Footersvg from '../assets/images/Footer.svg'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import '../assets/styles/homepage.css';
 import { Link } from 'react-router-dom';
@@ -248,7 +249,7 @@ const HomePage = () => {
                 </div>
                 <footer>
                     <div className="footer-img">
-                        <img className="medi-svg" src="Footer.svg" alt="Footer" />
+                        <img className="medi-svg" src={Footersvg} alt="Footer" />
                     </div>
                     <div className="footer-parent">
                         <div className="contact-footer">
