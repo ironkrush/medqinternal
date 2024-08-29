@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
+import MedicineImg from '../assets/images/medicine.png'
+import HCard1 from '../assets/images/final_hd_image.png'
+import HCard2 from '../assets/images/queue_homepage.png'
+import HCard3 from '../assets/images/Bed_homepage.png'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import '../assets/styles/homepage.css';
 
@@ -12,7 +16,7 @@ const HomePage = () => {
         let isScrollingDown = true;
         let lastScrollLeft = 0;
 
-        let tween = gsap.to(".marquee-part", {
+        let TWEEN = gsap.to(".marquee-part", {
             xPercent: -100,
             repeat: -1,
             duration: 5,
@@ -128,8 +132,8 @@ const HomePage = () => {
                 </div>
                 <div className="medi-img">
                     <div className="tagline">
-                        <button className="button">
-                            <p className="button__text">
+                        <button className="hbutton">
+                            <p className="hbutton__text">
                                 <span style={{ '--index': 0 }}>G</span>
                                 <span style={{ '--index': 1 }}>E</span>
                                 <span style={{ '--index': 2 }}>T</span>
@@ -143,18 +147,18 @@ const HomePage = () => {
                                 <span style={{ '--index': 10 }}>D</span>
                                 <span style={{ '--index': 11 }}> </span>
                             </p>
-                            <div className="button__circle">
-                                <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="button__icon" width="14">
+                            <div className="hbutton__circle">
+                                <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="hbutton__icon" width="14">
                                     <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor"></path>
                                 </svg>
-                                <svg viewBox="0 0 14 15" fill="none" width="14" xmlns="http://www.w3.org/2000/svg" className="button__icon button__icon--copy">
+                                <svg viewBox="0 0 14 15" fill="none" width="14" xmlns="http://www.w3.org/2000/svg" className="hbutton__icon hbutton__icon--copy">
                                     <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor"></path>
                                 </svg>
                             </div>
                         </button>
                         <h1>Medq: Your Health, Prioritized</h1>
                     </div>
-                    <img className="medicine" src="medicine.png" alt="Medicine" />
+                    <img className="medicine" src={MedicineImg} alt="Medicine" />
                 </div>
             </div>
 
@@ -186,7 +190,7 @@ const HomePage = () => {
                                 <h1>Appointment Booking</h1>
                                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolor natus pariatur animi eius quis, dignissimos placeat laudantium tempore? Beatae quam autem doloribus vero natus. Culpa libero sunt modi? Explicabo!</h4>
                             </div>
-                            <img className="appointment_homepage" src="final_hd_image.png" alt="Appointment Booking" />
+                            <img className="appointment_homepage" src={HCard1} alt="Appointment Booking" />
                         </div>
                     </li>
                     <li className="card" id="card-2">
@@ -195,29 +199,21 @@ const HomePage = () => {
                                 <h1>Advanced Queue Management</h1>
                                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolor natus pariatur animi eius quis, dignissimos placeat laudantium tempore? Beatae quam autem doloribus vero natus. Culpa libero sunt modi? Explicabo!</h4>
                             </div>
-                            <img src="queue_homepage.png" alt="Advanced Queue Management" />
+                            <img src={HCard2} alt="Advanced Queue Management" />
                         </div>
                     </li>
                     <li className="card" id="card-3">
-                        <div className="card-content" id="inventory_homepage">
+                        <div className="card-content" id="bed_homepage">
                             <div className="stack_header">
-                                <h1>Inventory Management</h1>
+                                <h1>Bed Management</h1>
                                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolor natus pariatur animi eius quis, dignissimos placeat laudantium tempore? Beatae quam autem doloribus vero natus. Culpa libero sunt modi? Explicabo!</h4>
                             </div>
-                            <img src="inventory_homepage.png" alt="Inventory Management" />
-                        </div>
-                    </li>
-                    <li className="card" id="card-4">
-                        <div className="card-content" id="prescription_homepage">
-                            <div className="stack_header">
-                                <h1>Prescription Management</h1>
-                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolor natus pariatur animi eius quis, dignissimos placeat laudantium tempore? Beatae quam autem doloribus vero natus. Culpa libero sunt modi? Explicabo!</h4>
-                            </div>
-                            <img src="prescription_homepage.png" alt="Prescription Management" />
+                            <img src={HCard3} alt="Bed Management" />
                         </div>
                     </li>
                 </ul>
             </div>
+            
         </div>
     );
 };

@@ -14,8 +14,8 @@
     background: linear-gradient(to left, #ff6e7f, #bfe9ff);
 }
 .medicine {
-    height: 40rem;
-    width: 45rem;
+    height: 30rem;
+    width: 35rem;
 }
 .glassin-nav {
     border-radius: 50px;
@@ -106,16 +106,16 @@
     font-size: 2rem;
     background: -webkit-linear-gradient(#eee, #333);
     background-color: #d7d7d7;
-    background-clip: text;
-    align-items: center;
+    /* background-clip: text; */
+    align-items: center; 
 }
 
 .tagline h1{
     letter-spacing: 0.2rem;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
 }
 
-.button {
+.hbutton{
     cursor: pointer;
     border: none;
     background: #d66c6c;
@@ -131,7 +131,7 @@
     font-weight: 600;
 }
 
-.button__text {
+.hbutton__text {
     position: absolute;
     inset: 0;
     animation: text-rotation 8s linear infinite;
@@ -142,7 +142,7 @@
     }
 }
 
-.button__circle {
+.hbutton__circle {
     position: relative;
     width: 2.5rem;
     height: 2.5rem;
@@ -155,26 +155,26 @@
     justify-content: center;
 }
 
-.button__icon--copy {
+.hbutton__icon--copy {
     position: absolute;
     transform: translate(-150%, 150%);
 }
 
-.button:hover {
+.hbutton:hover {
     background: #000;
     transform: scale(1.05);
 }
 
-.button:hover .button__icon {
+.hbutton:hover .hbutton__icon {
     color: #000;
 }
 
-.button:hover .button__icon:first-child {
+.hbutton:hover .hbutton__icon:first-child {
     transition: transform 0.3s ease-in-out;
     transform: translate(150%, -150%);
 }
 
-.button:hover .button__icon--copy {
+.hbutton:hover .hbutton__icon--copy {
     transition: transform 0.3s ease-in-out 0.1s;
     transform: translate(0);
 }
@@ -649,7 +649,7 @@ a {
     -webkit-text-fill-color: transparent;
     align-items: center;
 }
-.button {
+.hbutton{
     cursor: pointer;
     border: none;
     background: #d66c6c;
@@ -666,7 +666,7 @@ a {
     font-weight: 600;
 }
 
-.button__text {
+.hbutton__text {
     position: absolute;
     inset: 0;
     animation: text-rotation 8s linear infinite;
@@ -677,7 +677,7 @@ a {
     }
 }
 
-.button__circle {
+.hbutton__circle {
     position: relative;
     width: 45px;
     height: 45px;
@@ -690,26 +690,26 @@ a {
     justify-content: center;
 }
 
-.button__icon--copy {
+.hbutton__icon--copy {
     position: absolute;
     transform: translate(-150%, 150%);
 }
 
-.button:hover {
+.hbutton:hover {
     background: #000;
     transform: scale(1.05);
 }
 
-.button:hover .button__icon {
+.hbutton:hover .hbutton__icon {
     color: #000;
 }
 
-.button:hover .button__icon:first-child {
+.hbutton:hover .hbutton__icon:first-child {
     transition: transform 0.3s ease-in-out;
     transform: translate(150%, -150%);
 }
 
-.button:hover .button__icon--copy {
+.hbutton:hover .hbutton__icon--copy {
     transition: transform 0.3s ease-in-out 0.1s;
     transform: translate(0);
 }
@@ -740,6 +740,10 @@ a {
     }
     h1 {
         text-align: center;
+    }
+    .medicine{
+        height: 35rem;
+        width: 40rem;
     }
     .review-page {
         margin-top: 80px;
@@ -797,10 +801,10 @@ a {
         padding: 0 2px;
     }
 
-    /* Adjust image sizes for mobile */
+    
     #appointment_homepage > img {
         width: 80vw;
-        height: auto;
+        height: 20vh;
     }
 }
 
@@ -969,7 +973,7 @@ a {
     /* Adjust image sizes for mobile */
     #appointment_homepage > img {
         width: 80vw;
-        height: auto;
+        height: 20vh;
     }
 }
 
@@ -2662,7 +2666,7 @@ a {
 }
 
 @media (max-width: 318px) {
-    .button {
+    .hbutton{
         cursor: pointer;
         border: none;
         background: #d66c6c;
@@ -2678,7 +2682,7 @@ a {
         transform 200ms;
         font-weight: 600;
     }
-    .button__circle {
+    .hbutton__circle {
         position: relative;
         width: 40px;
         height: 40px;
