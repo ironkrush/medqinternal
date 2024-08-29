@@ -2382,6 +2382,13 @@ a {
     }
 }
 @media (min-width: 355px) and (max-width: 424px) {
+    #signup{
+        height: 100vh;
+        width: 100vw;
+    }
+    .wrapper{
+        top: 5%;
+    }
     .glassin-nav{
         margin: 0 30px;
         border-radius: 50px;
@@ -2549,6 +2556,13 @@ a {
     }
 }
 @media (min-width: 319px) and (max-width: 353px) {
+    #signup{
+        height: 100vh;
+        width: 100vw;
+    }
+    .wrapper{
+        top: 5%;
+    }
     .glassin-nav{
         margin: 0 30px;
         border-radius: 50px;
@@ -2718,6 +2732,13 @@ a {
 }
 
 @media (max-width: 318px) {
+    #signup{
+        height: 100vh;
+        width: 100vw;
+    }
+    .wrapper{
+        top: 5%;
+    }
     .hbutton{
         cursor: pointer;
         border: none;
