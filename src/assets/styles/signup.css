@@ -309,7 +309,7 @@ input:focus {
     opacity: 1;
 }
 
-@media (max-width: 1245px) {
+@media (min-width: 1245px) and (max-width: 1360px) {
     #signup {
         height: 100%;
         width: 100%;
@@ -353,6 +353,9 @@ input:focus {
         cursor: pointer;
         background: none;
         border: none;
+    }
+    .pass,.com{
+        gap: 4vh;
     }
 }
 
