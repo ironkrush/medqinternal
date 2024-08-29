@@ -4,7 +4,10 @@ import MedicineImg from '../assets/images/medicine.png'
 import HCard1 from '../assets/images/final_hd_image.png'
 import HCard2 from '../assets/images/queue_homepage.png'
 import HCard3 from '../assets/images/Bed_homepage.png'
-import Agni from '../assets/images/agnivesh.webp'
+import Dr1 from '../assets/images/doc1.jpeg'
+import Dr2 from '../assets/images/doc2.jpeg'
+import Dr3 from '../assets/images/doc3.jpeg'
+import Dr4 from '../assets/images/doc4.jpg'
 import Footersvg from '../assets/images/Footer.svg'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import '../assets/styles/homepage.css';
@@ -228,16 +231,16 @@ const HomePage = () => {
                         </h3>
                     </div>
                     <div className="flying-img" style={{ top: '20%', left: '20%', filter: 'blur(0px)' }}>
-                        <img src={Agni} alt="Flying Image 1" />
+                        <img src={Dr1} alt="Flying Image 1" />
                     </div>
                     <div className="flying-img" style={{ top: '60%', left: '20%' }}>
-                        <img src={Agni} alt="Flying Image 4" />
+                        <img src={Dr2} alt="Flying Image 4" />
                     </div>
                     <div className="flying-img" style={{ top: '10%', left: '50%', filter: 'blur(0px)' }}>
-                        <img src={Agni} alt="Flying Image 5" />
+                        <img src={Dr3} alt="Flying Image 5" />
                     </div>
                     <div className="flying-img" style={{ top: '60%', left: '60%' }}>
-                        <img src={Agni} alt="Flying Image 6" />
+                        <img src={Dr4} alt="Flying Image 6" />
                     </div>
                 </div>
                 <footer>

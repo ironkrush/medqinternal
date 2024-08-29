@@ -750,7 +750,7 @@ a {
     .card-content {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: self-start;
         padding: 1em;
     }
 
