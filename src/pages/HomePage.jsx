@@ -14,36 +14,35 @@ const HomePage = () => {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
-        const marquee = document.querySelector(".marquee-part");
-        let scroll = 0;
-        let isScrollingDown = true;
-        let lastScrollLeft = 0;
+        const marquee = document.querySelectorAll(".marquee-part");
 
-        let TWEEN = gsap.to(".marquee-part", {
-            xPercent: -100,
-            repeat: -1,
-            duration: 5,
-            ease: "linear",
-        }).totalProgress(0.5);
-
-        marquee.addEventListener("mousemove", (e) => {
-            if (!isScrollingDown) return;
-            e.preventDefault();
-            const x = e.pageX - marquee.offsetLeft;
-            const walk = (x - scroll) * 3;
-            marquee.scrollLeft = scroll - walk;
-
-            // Skew effect
-            let diff = marquee.scrollLeft - lastScrollLeft;
-            let speed = diff * 0.40;
-            marquee.style.transform = `skew(${speed}deg)`;
-            lastScrollLeft = marquee.scrollLeft;
+        // Scroll animation for the marquee
+        marquee.forEach((part) => {
+            gsap.to(part, {
+                xPercent: -100,
+                repeat: -1,
+                duration: 10,
+                ease: "linear"
+            });
         });
 
-        window.onscroll = () => {
-            marquee.style.left = `${-window.scrollX}px`;
-        };
+        // Implement the skew effect when moving the mouse over the marquee
+        marquee.forEach((part) => {
+            let lastScrollLeft = 0;
 
+            part.addEventListener("mousemove", (e) => {
+                const x = e.pageX - part.offsetLeft;
+                const walk = (x - part.scrollLeft) * 3;
+                part.scrollLeft = part.scrollLeft - walk;
+
+                let diff = part.scrollLeft - lastScrollLeft;
+                let speed = diff * 0.40;
+                part.style.transform = `skew(${speed}deg)`;
+                lastScrollLeft = part.scrollLeft;
+            });
+        });
+
+        // Apply other animations and interactions
         const nav = document.querySelector(".glassin-nav");
 
         const handleMouseMove = (e) => {
