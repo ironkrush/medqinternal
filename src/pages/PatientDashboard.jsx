@@ -34,7 +34,7 @@ const PatientDashboard = () => {
       });
 
       if (dockItems.some(item => item.isHovered)) {
-        dockContainer.style.width = "10000px";
+        dockContainer.style.width = "410px";
       } else {
         dockContainer.style.width = "";
       }
@@ -128,7 +128,6 @@ const PatientDashboard = () => {
           </div>
         </div>
       </div>
-      <div className="dashboard_medq"><h1>medq</h1></div>
     </div>
   );
 };

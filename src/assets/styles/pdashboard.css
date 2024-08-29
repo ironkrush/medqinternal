@@ -112,7 +112,7 @@ article.reveal {
     }
 }
 
-@media (max-width: 670px) and (max-width: 848px) {
+@media (min-width: 670px) and (max-width: 848px) {
     .dock-item{
         width: 65px;
         height: 65px;
@@ -266,7 +266,7 @@ article.reveal {
     }
 }
 
-@media screen and (min-width: 324px) and (max-width: 438px) {
+@media (min-width: 324px) and (max-width: 438px) {
     .dock-item{
         width:55px;
         height: 55px;
