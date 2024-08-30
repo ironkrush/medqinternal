@@ -198,7 +198,9 @@ const HomePage = () => {
                             <div className="card-content" id="appointment_homepage">
                                 <div className="stack_header">
                                     <h1>Appointment Booking</h1>
-                                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolor natus pariatur animi eius quis, dignissimos placeat laudantium tempore? Beatae quam autem doloribus vero natus. Culpa libero sunt modi? Explicabo!</h4>
+                                    <h4>✔&nbsp;Reduced Wait Times</h4>
+                                    <h4>✔&nbsp;Better Time Management</h4>
+                                    <h4>✔&nbsp;Increased Patient Satisfaction</h4>
                                 </div>
                                 <img className="appointment_homepage" src={HCard1} alt="Appointment Booking" />
                             </div>
@@ -207,7 +209,9 @@ const HomePage = () => {
                             <div className="card-content" id="queue_homepage">
                                 <div className="stack_header">
                                     <h1>Advanced Queue Management</h1>
-                                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolor natus pariatur animi eius quis, dignissimos placeat laudantium tempore? Beatae quam autem doloribus vero natus. Culpa libero sunt modi? Explicabo!</h4>
+                                    <h4>✔&nbsp;Streamlined Check-In/Check-Out</h4>
+                                    <h4>✔&nbsp;Efficient Emergency Handling</h4>
+                                    <h4>✔&nbsp;Improved Resource Allocation</h4>
                                 </div>
                                 <img src={HCard2} alt="Advanced Queue Management" />
                             </div>
@@ -216,7 +220,9 @@ const HomePage = () => {
                             <div className="card-content" id="bed_homepage">
                                 <div className="stack_header">
                                     <h1>Bed Management</h1>
-                                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolor natus pariatur animi eius quis, dignissimos placeat laudantium tempore? Beatae quam autem doloribus vero natus. Culpa libero sunt modi? Explicabo!</h4>
+                                    <h4>✔&nbsp;Enhanced Care Quality</h4>
+                                    <h4>✔&nbsp;Better Utilization Of Resources</h4>
+                                    <h4>✔&nbsp;Reduced Overcrowding</h4>
                                 </div>
                                 <img src={HCard3} alt="Bed Management" />
                             </div>
@@ -226,7 +232,7 @@ const HomePage = () => {
                 <div className="review-page">
                     <div className="review-text">
                         <h3 className="review_h1">
-                            Get lifetime access to our monthly industry calls where our instructors sit down with industry experts to bring you exclusive content
+                            Where technology meets compassion join us in revolutionizing the patient experience.  
                         </h3>
                     </div>
                     <div className="flying-img" style={{ top: '20%', left: '20%', filter: 'blur(0px)' }}>
@@ -249,8 +255,7 @@ const HomePage = () => {
                     <div className="footer-parent">
                         <div className="contact-footer">
                             <p className="footer-text">
-                                The dignity of a physician requires that he should look healthy, and as plump as nature intended him to be
-                                for the common crowd consider those who are not of this excellent bodily condition to be unable to take care of themselves.
+                              True inovation in healthcare it's not just about treating patients but mastering the art of orchestrating time, resources and care-turning every wait into oppotunity for healing
                             </p>
                         </div>
                         <div className="social-tags">
