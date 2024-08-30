@@ -29,7 +29,6 @@ const HomePage = () => {
             });
         });
 
-        // Implement the skew effect when moving the mouse over the marquee
         marquee.forEach((part) => {
             let lastScrollLeft = 0;
 

@@ -60,7 +60,6 @@
 }
 .nav-elem {
     font-weight: 900;
-    font-family: aeonik;
     color: rgb(255, 255, 255);
     will-change: transform;
     height: 2rem;
@@ -1859,9 +1858,9 @@ a {
         top: 5%;
     }
     .glassin-nav{
-        margin: 0 50px;
+        margin: 0px 18px;
         border-radius: 50px;
-        padding: 20px 35px;
+        padding: 20px 20px;
         display: flex;
         position:sticky;
         overflow: hidden;
@@ -1875,8 +1874,9 @@ a {
         background-color: rgba(44, 44, 44, .25);
         transform: scale(1);
     }
-    h1 {
+    .tagline h1 {
         text-align: center;
+        font-size: 2.4rem;
     }
     .medicine {
         height: 30rem;
