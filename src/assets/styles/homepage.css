@@ -2399,7 +2399,8 @@ a {
         background-color: rgba(44, 44, 44, .25);
         transform: scale(1);
     }
-    h1 {
+    .tagline h1 {
+        font-size: 1.8rem;
         text-align: center;
     }
     .medicine {
