@@ -61,10 +61,10 @@
 .bento {
     margin: 2rem ;
     display: grid;
-    width: 100vw;
-    max-width: 1000px;
-    height: 100vw;
-    max-height: 700px;
+    width: 100%;
+    /* max-width: 1000px; */
+    height: 100vh;
+    /* max-height: 700px; */
     gap: 1.2rem;
     grid-template-columns: repeat(2, 1fr);
     padding: 0.5rem;
@@ -118,8 +118,8 @@ article.reveal {
     }
 }
 
-/*
-@media (min-width: 850px) and (max-width: 1300px) {
+
+@media (min-width: 850px) and (max-width: 1400px) {
     .bento {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 4fr 3fr 3fr;
@@ -144,6 +144,11 @@ article.reveal {
         grid-column: 2 / 4;
         grid-row: 2 / 4;
     }
+    
+    .macos-nav{
+        bottom: -15%;
+    }
+   
 }
 
 @media (min-width: 670px) and (max-width: 848px) {
@@ -420,7 +425,7 @@ article.reveal {
         height: 10rem;
         width: 10rem;
     }
-} */
+} 
 
 .tooltip{
     position: absolute;
