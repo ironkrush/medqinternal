@@ -63,7 +63,6 @@ const AppointmentPage = () => {
                 appointmentType: 'normal',
                 appointmentDate: '',
             });
-            // Refresh appointments
             const response = await axios.get('/api/patient/queue', {
                 headers: {
                     Authorization: `Bearer ${token}`,

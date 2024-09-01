@@ -111,7 +111,7 @@ const SignupPage = () => {
                                 <svg width="45" height="45" viewBox="0 0 95 95">
                                     <circle cx="50" cy="50" r="20" stroke="black" fill="none"></circle>
                                     <g transform="translate(0,-952.36222)">
-                                        <path d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4" stroke="black" stroke-width="3" fill="none" class="path1"></path>
+                                        <path d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4" stroke="black" strokeWidth="3" fill="none" class="path1"></path>
                                     </g>
                                 </svg>
                                 <span>Doctor</span>
@@ -131,7 +131,7 @@ const SignupPage = () => {
                             <svg width="45" height="45" viewBox="0 0 95 95">
                                     <circle cx="50" cy="50" r="20" stroke="black" fill="none"></circle>
                                     <g transform="translate(0,-952.36222)">
-                                        <path d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4" stroke="black" stroke-width="3" fill="none" class="path1"></path>
+                                        <path d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4" stroke="black" strokeWidth="3" fill="none" class="path1"></path>
                                     </g>
                                 </svg>
                                 <span>Staff</span>
@@ -151,7 +151,7 @@ const SignupPage = () => {
                             <svg width="45" height="45" viewBox="0 0 95 95">
                                     <circle cx="50" cy="50" r="20" stroke="black" fill="none"></circle>
                                     <g transform="translate(0,-952.36222)">
-                                        <path d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4" stroke="black" stroke-width="3" fill="none" class="path1"></path>
+                                        <path d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4" stroke="black" strokeWidth="3" fill="none" class="path1"></path>
                                     </g>
                                 </svg>
                                 <span>Patient</span>
