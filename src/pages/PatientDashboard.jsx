@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import '../assets/styles/pdashboard.css';
+import Dr1 from '../assets/images/doc1.jpeg'
 
 const PatientDashboard = () => {
   const dockContainerRef = useRef(null);
@@ -86,25 +87,25 @@ const PatientDashboard = () => {
       <div className="dashboard-name"></div>
       <div className="grid-container">
         <div className="bento">
-          <article className="inside-dashboard">
+          <article className="inside-dashboard reveal">
             <a href="#">
-              <img src="female-pic.jpg" className="dashboard_femalepic" alt="Profile" />
+              <img src={Dr1} className="dashboard_femalepic" alt="Profile" />
               <h2 className="dashboard_header"></h2>
             </a>
           </article>
-          <article className="inside-dashboard">
+          <article className="inside-dashboard reveal">
             <a href="#">
               <img className="dashboard_appointment" src="appointment-Photoroom.png" alt="Appointment" />
               <h1>Appointment</h1>
             </a>
           </article>
-          <article className="inside-dashboard">
+          <article className="inside-dashboard reveal">
             <a href="#">
               <img className="dashboard_queue" src="queue-Photoroom.png" alt="Queue" />
               <h1>Queue</h1>
             </a>
           </article>
-          <article className="inside-dashboard">
+          <article className="inside-dashboard reveal">
             <a href="#">
               <img className="dashboard_bed" src="bed.png" alt="Bed Management" />
               <h1>Bed Management</h1>
